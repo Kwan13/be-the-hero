@@ -19,11 +19,15 @@ Utilizando o terminal/console vá até a raiz da basta "backend" e digite o coma
 ```
 npm install
 ```
+<br>
 2º - Iniciar servidor:
 Ainda no diretório "backend" utilizando o terminal digite:
+
 ```
 npm start
 ```
+
+<br>
 3º - Rotas:
 
 Rotas|Tipo|Descrição|Observações
@@ -33,3 +37,18 @@ Rotas|Tipo|Descrição|Observações
 /incidents|GET|Lista todos os "casos" registrados juntamente com os dados da ONG que criou.|Utilize o Query Param "page" para manipular a exibição dos registro, é possível obter o total de registro através da propriedade 'X-total-count' no cabeçalho da requisição.
 /incidents|POST|Adiciona um novo "caso" no banco de dados.|Retorna o ID do caso cadastrado.
 /incidents/:id|DELETE|Exclui um "caso" de uma ONG especifica|É necessário encaminhar via "headers" um parâmetro chamado "Authorization" com o ID da ONG que está solicitando a exclusão e outro parâmetro via "params" (ROUTE PARAMS) com o ID do "caso" que será excluido.
+
+_**Front-end:**_
+
+Instalando dependencias:
+1º - Acesse o diretório "frontend" via terminal e digite o comando:
+```
+npm install
+```
+<br>
+
+2º - Para iniciar o frontend digite:
+```
+npm start
+```
+
