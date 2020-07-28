@@ -30,13 +30,13 @@ npm start
 <br>
 3º - Rotas:
 
-Rotas|Tipo|Descrição|Observações
-:---: | :---: | :--- | :---:
-/ongs|GET|Lista todas as ONGS cadastradas no banco de dados.|Não
-/ongs|POST| Adiciona o cadastro de uma nova ONG no banco de dados.| Retorna o ID da ONG cadastrada.
-/incidents|GET|Lista todos os "casos" registrados juntamente com os dados da ONG que criou.|Utilize o Query Param "page" para manipular a exibição dos registro, é possível obter o total de registro através da propriedade 'X-total-count' no cabeçalho da requisição.
-/incidents|POST|Adiciona um novo "caso" no banco de dados.|Retorna o ID do caso cadastrado.
-/incidents/:id|DELETE|Exclui um "caso" de uma ONG especifica|É necessário encaminhar via "headers" um parâmetro chamado "Authorization" com o ID da ONG que está solicitando a exclusão e outro parâmetro via "params" (ROUTE PARAMS) com o ID do "caso" que será excluido.
+Rotas|Tipo|Descrição
+:---: | :---: | :--- |
+/ongs|GET|Lista todas as ONGS cadastradas no banco de dados.
+/ongs|POST| Adiciona o cadastro de uma nova ONG no banco de dados.
+/incidents|GET|Lista todos os "casos" registrados juntamente com os dados da ONG que criou.
+/incidents|POST|Adiciona um novo "caso" no banco de dados.
+/incidents/:id|DELETE|Exclui um "caso" de uma ONG especifica.
 
 _**Front-end:**_
 
